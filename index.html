@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Mahasiswa</title>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #0a0a0a;
+            color: #00ffcc;
+            text-align: center;
+            transition: all 0.5s ease-in-out;
+        }
+        .header {
+            background: #111;
+            color: #00ffcc;
+            padding: 15px;
+            font-size: 24px;
+            border-bottom: 3px solid #00ffcc;
+        }
+        .nav {
+            background: #222;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+        .nav a, .nav button {
+            background: #00ffcc;
+            color: #111;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background 0.3s ease-in-out;
+        }
+        .nav button:hover, .nav a:hover {
+            background: #009999;
+        }
+        .container {
+            max-width: 700px;
+            margin: 20px auto;
+            background: #111;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 15px rgba(0, 255, 204, 0.5);
+            transition: transform 0.3s ease-in-out;
+        }
+        .container:hover {
+            transform: scale(1.02);
+        }
+        .profile-img {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #00ffcc;
+            box-shadow: 0px 4px 8px rgba(0, 255, 204, 0.3);
+            transition: transform 0.3s ease-in-out;
+        }
+        .profile-img:hover {
+            transform: rotate(5deg);
+        }
+        .info {
+            text-align: left;
+            background: #222;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 5px rgba(0, 255, 204, 0.5);
+            max-width: 400px;
+            margin: 20px auto;
+            color: #e0e0e0;
+            line-height: 1.6;
+        }
+        .info p {
+            margin: 10px 0;
+            font-size: 18px;
+        }
+        .info strong {
+            color: #00ffcc;
+        }
+        .bio h2, .skills h2, .about h2 {
+            color: #00ffcc;
+            border-bottom: 2px solid #00ffcc;
+            padding-bottom: 5px;
+        }
+        .bio, .skills, .about {
+            text-align: left;
+            margin-top: 20px;
+        }
+        .about img {
+            width: 100%;
+            max-height: 400px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 255, 204, 0.3);
+            margin-top: 10px;
+        }
+        .footer {
+            margin-top: 20px;
+            padding: 10px;
+            background: #111;
+            color: #00ffcc;
+            text-align: center;
+            border-top: 3px solid #00ffcc;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        Profil Mahasiswa
+    </div>
+    <div class="nav">
+        <button onclick="location.href='#home'">Home</button>
+        <button onclick="location.href='#about'">About</button>
+    </div>
+    <div class="container" id="home">
+        <h1>Profil Mahasiswa</h1>
+        <img src="Ramadan.jpg" alt="Foto Ramadan Mufian" class="profile-img">
+        <div class="info">
+            <p><strong>Nama:</strong> Ramadan Mufian</p>
+            <p><strong>NPM:</strong> G1A023020</p>
+            <p><strong>Status:</strong> Mahasiswa</p>
+            <p><strong>Alamat:</strong> Padang Harapan</p>
+        </div>
+        <div class="bio">
+            <h2>Biografi</h2>
+            <p>Ramadan Mufian adalah mahasiswa yang memiliki semangat tinggi dalam dunia teknologi dan pengembangan web. Dengan latar belakang yang kuat dalam pemrograman, ia bercita-cita untuk menjadi seorang pengembang perangkat lunak yang handal. Selain itu, ia aktif dalam berbagai kegiatan akademik dan organisasi mahasiswa seperti organisasin himpunan maupun UKM lainya, ramada mufian lahir di bengkulu utara pada tanggal 15 oktober 2004 dan ia  tinggal disana sampai umur 6 tahun, di karenakan orangtuanya pindah tugas ia terpaksa pindah ke bengkulu selatan pada tahun 2010. ia sekola sd di bengkulu selatan selama 5 tahun yaitu sd negeri 12 bengkulu selatan,  lalu melanjutkan pendidikan ke smp negeri 2 bengkulu selatan, dengan pereian nilai yang bagus ia di terima di salah satu sekola favorit  sma negeri 5 bengkulu selatan, di sana dia banayak sekali merai prestasi baik itu tingkat nasional sampai dengan internasioan. salah satunya perahi mendali emas di ajang kompetisi penelitian karya tulis ilmiah</p>
+        </div>
+        <div class="skills">
+            <h2>Keahlian</h2>
+            <ul>
+                <li>Pengembangan Web (HTML, CSS, JavaScript, PHP)</li>
+                <li>Desain UI/UX</li>
+                <li>Pemrograman Python & CSS</li>
+                <li>Manajemen Basis Data</li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="container" id="about">
+        <div class="about">
+            <h2>Tentang Saya</h2>
+            <p>Saya adalah seorang mahasiswa yang sangat antusias dalam dunia teknologi. Saya memiliki minat yang besar dalam pemrograman dan pengembangan perangkat lunak. salah satu proje yang telah saya buat yaitu perhitunga statistika yang dapat mempermudah untuk perhitunganya </p>
+            <h3>Hobi</h3>
+            <img src="Game.jpg" alt="Hobi Saya">
+            <p>Saya senang bermain game  role play salah satunya gta v role play yang mana saya suka menjadi sesuatu yang saya inginkan di dalam game tersebut.</p>
+            <h3>Favorit</h3>
+            <img src="langit.jpg" alt="Favorit Saya">
+            <p>Saya menyukai langit, bagi saya langit membawakan ketenangan di saaat saya membutukan inspirasi untu memulai karya saya sendiri.</p>
+            <h3>Tempat Favorit</h3>
+            <img src="sunset.jpg" alt="Tempat Favorit Saya">
+            <p>Pantai adalah tempat favorit saya untuk bersantai dan mendapatkan inspirasi baru, terutama saat menikmati matahari terbenam.</p>
+        </div>
+    </div>
+
+    <!-- Bagian List Kesan dan Pesan -->
+<div class="container" id="list-feedback">
+    <h2>Daftar Kesan dan Pesan</h2>
+    <table class="feedback-list">
+        <thead>
+            <tr>
+                <th>No</th>
+                <th>Nama</th>
+                <th>Kesan</th>
+                <th>Pesan</th>
+                <th>Tanggal</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>tanpa nama </td>
+                <td>Sangat inspiratif</td>
+                <td>saya berharap setelah ini kamu selalu sukses baik itu di dunia perkulian maupun selanjutnya!</td>
+                <td>2025-02-16</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>sebut saja ikan </td>
+                <td>Memotivasi</td>
+                <td>pesan saya semoga kamu selalau bermanfaat satu sama lain</td>
+                <td>2025-02-17</td>
+            </tr>
+
+        </tbody>
+    </table>
+</div>
+
+<div class="container" id="feedback">
+    <h2>Kesan dan Pesan</h2>
+    <form action="#" method="post">
+        <table>
+            <tr>
+                <td><label for="nama">Nama:</label></td>
+                <td><input type="text" id="nama" name="nama" placeholder="Masukkan nama Anda" required></td>
+            </tr>
+            <tr>
+                <td><label for="kesan">Kesan:</label></td>
+                <td><textarea id="kesan" name="kesan" rows="4" placeholder="Bagikan kesan Anda" required></textarea></td>
+            </tr>
+            <tr>
+                <td><label for="pesan">Pesan:</label></td>
+                <td><textarea id="pesan" name="pesan" rows="4" placeholder="Tulis pesan untuk saya" required></textarea></td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: center;">
+                    <button type="submit">Kirim</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>
+
+<style>
+
+    #feedback h2 {
+        color: #00ffcc;
+        border-bottom: 2px solid #00ffcc;
+        padding-bottom: 5px;
+        margin-bottom: 20px;
+        display: inline-block;
+    }
+    #feedback form table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    #feedback form table td {
+        padding: 10px;
+        vertical-align: top;
+    }
+    #feedback form label {
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #feedback form input[type="text"],
+    #feedback form textarea {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #00ffcc;
+        border-radius: 4px;
+        background: #222;
+        color: #00ffcc;
+        font-size: 16px;
+    }
+    #feedback form button {
+        background: #00ffcc;
+        color: #111;
+        border: none;
+        padding: 10px 20px;
+        font-size: 18px;
+        font-weight: bold;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background 0.3s ease-in-out;
+    }
+    #feedback form button:hover {
+        background: #009999;
+    }
+</style>
+
+
+<style>
+
+    #list-feedback h2 {
+        color: #00ffcc;
+        border-bottom: 2px solid #00ffcc;
+        padding-bottom: 5px;
+        margin-bottom: 20px;
+        display: inline-block;
+    }
+    .feedback-list {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+    }
+    .feedback-list th,
+    .feedback-list td {
+        border: 1px solid #00ffcc;
+        padding: 10px;
+        text-align: center;
+    }
+    .feedback-list th {
+        background: #222;
+        color: #00ffcc;
+        font-size: 18px;
+    }
+    .feedback-list td {
+        background: #111;
+        color: #e0e0e0;
+        font-size: 16px;
+    }
+    .feedback-list tr:nth-child(even) td {
+        background: #1a1a1a;
+    }
+</style>
+
+
+    <!-- Bagian Kontak -->
+<div class="container" id="contact">
+    <div class="contact">
+        <h2>Kontak</h2>
+        <div class="contact-links">
+            <a href="https://wa.me/qr/WEVVFZSXUBAKK1" target="_blank">
+                <img src="wa.png" alt="Icon WhatsApp"> WhatsApp
+            </a>
+            <a href="https://www.instagram.com/ar.fyan?igsh=YjF1b3IzMzVzZmx4" target="_blank">
+                <img src="ytb.png" alt="Icon Instagram"> Instagram
+            </a>
+            <a href="https://youtube.com/@ramadanmufian?si=5eW-aqmfctQeFWj0" target="_blank">
+                <img src="ytb.png" alt="Icon YouTube"> YouTube
+            </a>
+        </div>
+    </div>
+</div>
+
+<style>
+    /* Style untuk bagian Kontak */
+    .contact {
+        text-align: center;
+        margin-top: 20px;
+    }
+    .contact h2 {
+        color: #00ffcc;
+        border-bottom: 2px solid #00ffcc;
+        padding-bottom: 5px;
+        display: inline-block;
+    }
+    .contact-links {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        margin-top: 15px;
+    }
+    .contact-links a {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: bold;
+        color: #00ffcc;
+        transition: color 0.3s ease-in-out;
+    }
+    .contact-links a img {
+        width: 24px;
+        height: 24px;
+        margin-right: 8px;
+    }
+    .contact-links a:hover {
+        color: #009999;
+    }
+</style>
+
+    
+    <div class="footer">
+        <p>&copy; 2025 Ramadan Mufian | Universitas Bengkulu</p>
+    </div>
+</body>
+</html>
